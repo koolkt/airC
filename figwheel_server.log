@@ -1,0 +1,12 @@
+sending changed CSS file: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.046 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.db/default-db at line 8 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/db.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 9.849 seconds.[0m
