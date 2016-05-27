@@ -32,14 +32,15 @@
                       :current-city s/Keyword}
              :search-input s/Str
              :search-predictions s/Any
-             :search-predictions-expand? s/Bool})
+             :search-predictions-expand? s/Bool
+             :active-panel s/Keyword})
 
-(def default-value {:search {:city-data {}
-                             :cities {:paris {:center {:lat 48.856614 :lng 2.3522219}
-                                              :bounds {:ne {:lat 48.9021449 :lng 2.4699208}
-                                                       :sw {:lat 48.815573 :lng 2.225193}}}}
-                             :bounds {:ne {:lat 0 :lng 0} :sw {:lat 0 :lng 0}}
-                             :current-city :paris}
-                    :search-input ""
-                    :search-predictions []
-                    :search-predictions-expand? false})
+(def default-db {:search {:city-data {}
+                          :cities {:paris {:center {:lat 48.856614 :lng 2.3522219}
+                                           :bounds {:ne {:lat 48.9021449 :lng 2.4699208}
+                                                    :sw {:lat 48.815573 :lng 2.225193}}}}
+                          :bounds {:ne {:lat 0 :lng 0} :sw {:lat 0 :lng 0}}
+                          :current-city :paris}
+                 :search-input ""
+                 :search-predictions []
+                 :search-predictions-expand? false})

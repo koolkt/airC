@@ -10,6 +10,7 @@
                  [reagent-utils "0.1.8"]
                  [reagent "0.6.0-alpha2"]
                  [re-frame "0.7.0"]
+                 [prismatic/schema "1.1.1"]
                  [org.clojure/clojurescript "1.8.51" :scope "provided"]
                  [org.clojure/clojure "1.8.0"]
                  [selmer "1.0.4"]

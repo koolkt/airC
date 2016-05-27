@@ -10,3 +10,186 @@ notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.j
 notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
 notifying browser that file changed:  out/macoloc/db.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 9.849 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: sb, could not locate sb.cljs, sb.cljc, or Closure namespace "" at line 12 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var sb/search-sidebar at line 12 src/cljs/macoloc/views.cljs
+WARNING: No such namespace: gm, could not locate gm.cljs, gm.cljc, or Closure namespace "" at line 13 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var gm/gmap-outer at line 13 src/cljs/macoloc/views.cljs
+WARNING: No such namespace: sp, could not locate sp.cljs, sp.cljc, or Closure namespace "" at line 17 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var sp/place-search-bar at line 17 src/cljs/macoloc/views.cljs
+WARNING: No such namespace: r, could not locate r.cljs, r.cljc, or Closure namespace "" at line 27 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var r/create-class at line 27 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 28 src/cljs/macoloc/views.cljs
+WARNING: No such namespace: r, could not locate r.cljs, r.cljc, or Closure namespace "" at line 31 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var r/create-class at line 31 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 32 src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 33 src/cljs/macoloc/views.cljs
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.05 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.db/default-db at line 8 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: No such namespace: s, could not locate s.cljs, s.cljc, or Closure namespace "" at line 18 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var s/check at line 18 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/after at line 25 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/schema at line 25 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/register-handler at line 27 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/register-handler at line 35 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: No such namespace: service, could not locate service.cljs, service.cljc, or Closure namespace "" at line 40 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var service/data-api at line 40 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/dispatch at line 43 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  out/macoloc/handlers.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.954 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file src/cljs/macoloc/shared/search_place/search_place_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.426 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.ajax, could not locate colocbook/ajax.cljs, colocbook/ajax.cljc, or Closure namespace "colocbook.ajax" in file /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/resources.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.943 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/shared/search_place/search_place_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.758 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/shared/search_place/search_place_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.674 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/shared/search_place/search_place_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.417 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/components/open_map/open_map_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.388 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: Invalid :refer, var macoloc.db/default-value does not exist in file src/cljs/macoloc/components/open_map/open_map_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.481 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: Invalid :refer, var macoloc.db/default-value does not exist in file src/cljs/macoloc/components/open_map/open_map_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.356 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file src/cljs/macoloc/components/search_sidebar/search_sidebar_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.637 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.db, could not locate colocbook/db.cljs, colocbook/db.cljc, or Closure namespace "colocbook.db" in file src/cljs/macoloc/components/search_sidebar/search_sidebar_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.609 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: Invalid :refer, var macoloc.db/default-value does not exist in file src/cljs/macoloc/components/search_sidebar/search_sidebar_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.35 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: Invalid :refer, var macoloc.db/default-value does not exist in file src/cljs/macoloc/components/search_sidebar/search_sidebar_handlers.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.37 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: sb, could not locate sb.cljs, sb.cljc, or Closure namespace "" at line 15 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var sb/search-sidebar at line 15 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: No such namespace: gm, could not locate gm.cljs, gm.cljc, or Closure namespace "" at line 16 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var gm/gmap-outer at line 16 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: No such namespace: sp, could not locate sp.cljs, sp.cljc, or Closure namespace "" at line 20 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var sp/place-search-bar at line 20 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 31 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 35 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 36 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+[31mCompiling "target/cljsbuild/public/js/app.js" failed.
+[0mANALYSIS ERROR: No such namespace: colocbook.resources, could not locate colocbook/resources.cljs, colocbook/resources.cljc, or Closure namespace "colocbook.resources" in file src/cljs/macoloc/components/open_map/open_map.cljs on file null, line null, column null
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.967 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: sb, could not locate sb.cljs, sb.cljc, or Closure namespace "" at line 14 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var sb/search-sidebar at line 14 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: No such namespace: gm, could not locate gm.cljs, gm.cljc, or Closure namespace "" at line 15 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var gm/gmap-outer at line 15 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: No such namespace: sp, could not locate sp.cljs, sp.cljc, or Closure namespace "" at line 19 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var sp/place-search-bar at line 19 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 30 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 34 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 35 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.956 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 34 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 38 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 39 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.725 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.views/dispatch at line 38 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/views.cljs
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.677 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.574 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.51 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: s, could not locate s.cljs, s.cljc, or Closure namespace "" at line 18 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var s/check at line 18 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/after at line 25 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/schema at line 25 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/register-handler at line 27 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/register-handler at line 35 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: No such namespace: service, could not locate service.cljs, service.cljc, or Closure namespace "" at line 40 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var service/data-api at line 40 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/dispatch at line 43 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  out/macoloc/db.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.31 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: s, could not locate s.cljs, s.cljc, or Closure namespace "" at line 19 src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var s/check at line 19 src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var macoloc.handlers/schema at line 26 src/cljs/macoloc/handlers.cljs
+WARNING: No such namespace: service, could not locate service.cljs, service.cljc, or Closure namespace "" at line 41 src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var service/data-api at line 41 src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  out/macoloc/handlers.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.863 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.handlers/schema at line 27 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: No such namespace: service, could not locate service.cljs, service.cljc, or Closure namespace "" at line 42 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var service/data-api at line 42 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/handlers.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.676 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.handlers/schema at line 27 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: No such namespace: service, could not locate service.cljs, service.cljc, or Closure namespace "" at line 42 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var service/data-api at line 42 /home/koolkat/Projects/clojure/macoloc/src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  out/macoloc/handlers.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.577 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: No such namespace: service, could not locate service.cljs, service.cljc, or Closure namespace "" at line 43 src/cljs/macoloc/handlers.cljs
+WARNING: Use of undeclared Var service/data-api at line 43 src/cljs/macoloc/handlers.cljs
+notifying browser that file changed:  out/macoloc/handlers.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.631 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/handlers.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.528 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.598 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+WARNING: Use of undeclared Var macoloc.views/navbar at line 11 src/cljs/macoloc/core.cljs
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.661 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/macoloc/core.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.511 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/macoloc/views.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.56 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/macoloc/routes.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.572 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ("src/cljc" "src/cljs" "env/dev/cljs")...
+notifying browser that file changed:  out/macoloc/routes.js
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.7 seconds.[0m
+sending changed CSS file: resources/public/css/screen.css

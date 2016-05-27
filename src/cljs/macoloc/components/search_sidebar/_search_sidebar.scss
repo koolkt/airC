@@ -1,0 +1,55 @@
+div.six.columns.cards {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+
+@mixin home-fixed {
+  top: 62px;
+  bottom: 0;
+  position: fixed;
+}
+
+@mixin abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.map {
+  @include home-fixed;
+  right: 0;
+  left: auto;
+}
+
+.search-sidebar {
+  @include home-fixed;
+  overflow-y: scroll;
+  right: auto;
+  left: 0 ;
+}
+
+.panel-image {
+  overflow: hidden;
+  padding-bottom: 67%;
+  position: relative;
+}
+
+.panel-image-link {
+  z-index:0;
+  @include abs;
+}
+
+.image-container {
+  @include abs;
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.panel-overlay-center-left {
+  display:none;
+}

@@ -1,0 +1,37 @@
+.search-box-hero {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 33%;
+  z-index: 1001;
+}
+
+ul.search-suggestions {
+  max-width: 90%;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  background: white;
+}
+
+#search-location-hero {
+  width: 90%;
+  margin: 0;
+}
+
+@media (#{$bp-larger-than-mobile}) {
+  ul.search-suggestions {
+    max-width: 50%;
+  }
+
+  #search-location-hero {
+    width: 50%;
+  }
+}
+
+/* Remove powered by googlemaps from searchbox */
+
+.pac-container:after {
+  background-image: none !important;
+  height: 0px;
+}
