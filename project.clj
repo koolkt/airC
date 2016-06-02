@@ -73,7 +73,7 @@
      :compiler
      {:output-to "target/cljsbuild/public/js/app.js"
       :output-dir "target/cljsbuild/public/js/out"
-      :externs ["react/externs/react.js"]
+      :externs ["react/externs/react.js" "resources/externs/gmap.js"]
       :pretty-print true}}}}
 
   :target-path "target/%s/"
@@ -111,6 +111,7 @@
                   :plugins      [[com.jakemccrary/lein-test-refresh "0.14.0"]
                                  [lein-figwheel "0.5.3-1"]
                                  [lein-doo "0.1.6"]
+                                 [cider/cider-nrepl "0.13.0-SNAPSHOT"]
                                  [org.clojure/clojurescript "1.8.51"]]
 
                    :cljsbuild
@@ -133,7 +134,9 @@
                   :figwheel
                   {:http-server-root "public"
                    :nrepl-port 7002
-                   :css-dirs ["resources/public/css"]}
+                   :css-dirs ["resources/public/css"]
+                   :ring-handler macoloc.handler/app
+                   }
                   :doo {:build "test"}
                   :source-paths ["env/dev/clj" "test/clj"]
                   :resource-paths ["env/dev/resources"]

@@ -193,3 +193,5 @@ notifying browser that file changed:  out/macoloc/routes.js
 notifying browser that file changed:  out/macoloc/routes.js
 [32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.7 seconds.[0m
 sending changed CSS file: resources/public/css/screen.css
+sending changed CSS file: resources/public/css/screen.css
+sending changed CSS file: resources/public/css/screen.css

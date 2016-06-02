@@ -25,3 +25,5 @@
 
 
 (defn app [] (middleware/wrap-base #'app-routes))
+
+;; (def app (middleware/wrap-base #'app-routes))
