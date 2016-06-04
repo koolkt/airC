@@ -35,7 +35,10 @@
                  [conman "0.5.8"]
                  [org.postgresql/postgresql "9.4-1206-jdbc4"]
                  [org.webjars/webjars-locator-jboss-vfs "0.1.0"]
-                 [luminus-immutant "0.2.0"]]
+                 [luminus-immutant "0.2.0"]
+                 [clj-jwt "0.1.1"]
+                 [cheshire "5.6.1"]
+                 [com.cemerick/friend "0.2.2-SNAPSHOT"]]
 
   :min-lein-version "2.0.0"
 
@@ -135,7 +138,7 @@
                   {:http-server-root "public"
                    :nrepl-port 7002
                    :css-dirs ["resources/public/css"]
-                   :ring-handler macoloc.handler/app
+                   ;; :ring-handler macoloc.handler/app
                    }
                   :doo {:build "test"}
                   :source-paths ["env/dev/clj" "test/clj"]
