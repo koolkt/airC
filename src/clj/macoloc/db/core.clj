@@ -4,7 +4,8 @@
     [clojure.java.jdbc :as jdbc]
     [conman.core :as conman]
     [macoloc.config :refer [env]]
-    [mount.core :refer [defstate]])
+    [mount.core :refer [defstate]]
+    [rethinkdb.query :as r])
   (:import org.postgresql.util.PGobject
            org.postgresql.jdbc4.Jdbc4Array
            clojure.lang.IPersistentMap
@@ -14,6 +15,12 @@
             Date
             Timestamp
             PreparedStatement]))
+
+(defstate rethink-db
+  :start (r/connect :host (env :rethink-db-host)
+                    :port (Integer. (env :rethink-db-port))
+                    :db (env :default-db-name))
+  :stop (.close rethink-db))
 
 (defstate ^:dynamic *db*
           :start (conman/connect!

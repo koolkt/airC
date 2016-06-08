@@ -1,4 +1,4 @@
-token=$(curl -X POST -H "Content-type: application/json" -d '{"username": "greg", "password": "kaktus"}' http://localhost:3000/authenticate -i | grep 'X-Auth-Token' | cut -d : -f 2)
+token=$(curl -X POST -H "Content-type: application/json" -d '{"username": "jdixon3@deliciousdays.com", "password": "Y5ya4XYXA0v"}' http://localhost:3000/authenticate -i | grep 'X-Auth-Token' | cut -d : -f 2)
 
 auth="X-Auth-Token: ${token:0:-1}"
 

@@ -1,17 +1,18 @@
 CREATE TABLE users
-(id INT PRIMARY KEY,
- first_name VARCHAR(50),
- last_name VARCHAR(50),
- email VARCHAR(50),
+(id int NOT NULL AUTO_INCREMENT,
+ first_name VARCHAR(50) NOT NULL,
+ last_name VARCHAR(50) NOT NULL,
+ email VARCHAR(50) NOT NULL,
  profile_picture VARCHAR(100),
  gender VARCHAR(50),
- admin BOOLEAN,
+ admin BOOLEAN NOT NULL,
  ip_address VARCHAR(20),
  phone VARCHAR(50),
  age INT,
  last_login DATE,
  is_active BOOLEAN,
- pass VARCHAR(300));
+ pass VARCHAR(300)
+ PRIMARY KEY (id));
 
 insert into users (id, first_name, last_name, email, gender, ip_address, profile_picture, phone, age, last_login, is_active, admin, pass) values (1, 'Kimberly', 'Parker', 'kparker0@google.cn', 'Female', '206.104.237.181', 'https://robohash.org/velplaceatvoluptatum.jpg?size=50x50&set=set1', '269-(830)980-7732', 89, '6/1/2015', false, true, 'GsCkwrodO');
 insert into users (id, first_name, last_name, email, gender, ip_address, profile_picture, phone, age, last_login, is_active, admin, pass) values (2, 'Juan', 'Morgan', 'jmorgan1@apple.com', 'Male', '115.241.51.114', 'https://robohash.org/eaexpeditaneque.jpg?size=50x50&set=set1', '81-(684)544-5652', 65, '12/13/2015', true, false, '5MwXRR5');

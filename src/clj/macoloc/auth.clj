@@ -5,10 +5,45 @@
             [cemerick.friend.credentials :as creds]
             [cemerick.friend.workflows :as workflows]
             [cemerick.friend.util :refer [gets]]
+            [clj-time.core :refer [minutes]]
             [clj-jwt.core :refer :all]
             [clj-time.core :refer [now plus before? after?]]
             [clj-jwt.intdate :refer [intdate->joda-time]]
-            [cheshire.core :as json]))
+            [cheshire.core :as json]
+            [rethinkdb.query :as r]
+            [macoloc.db.core :as db]))
+
+;; (def users {"friend" {:username "friend"
+;;                       :password (creds/hash-bcrypt "clojure")
+;;                       :roles #{::user}}
+;;             "greg" {:username "greg"
+;;                     :password (creds/hash-bcrypt "kaktus")
+;;                     :roles #{::admin}}})
+
+(defn get-user [email]
+  (assoc (first (-> (r/table "users")
+                    (r/get-all [email] {:index "email"})
+                    (r/pluck '("username" "password"))
+                    (r/run db/rethink-db)))
+         :roles
+         #{::user}))
+
+(derive ::admin ::user) ; admins are considered to be also users
+
+(def jwt-service-config
+  {:algorithm :HS256
+   :private-key "secret" ; FIXME never put a plain text secret in the source code!
+   :token-time-to-live (minutes 10)})
+
+(def jwt-client-config
+  {:algorithm :HS256
+   :public-key "secret"}) ; FIXME never put a plain text secret in the source code!
+
+(def config {:token-header "X-Auth-Token"
+             :service-config jwt-service-config
+             :client-config jwt-client-config
+             :credential-fn (partial creds/bcrypt-credential-fn get-user)
+             :get-user-fn get-user})
 
 ;; TODO add support for the claims defined in https://tools.ietf.org/html/draft-ietf-oauth-json-web-token-32
 (defn- make-user-claim [service-config user-record]
@@ -85,14 +120,16 @@
           (workflow-deny))) ; credentials are invalid
       {:status 400 :headers {"Content-Type" "text/plain"}}))) ; body is nil, no credentials present
 
+;; (defn authenticate-user []
+;;   )
+
 (defn- login-uri? [config request]
   (and (= (gets :login-uri config (::friend/auth-config request))
           (path-info request))
        (= :post (:request-method request))))
 
-(defn workflow [& {:as config}]
+(defn workflow [request]
   "A friend workflow using JSON Web Tokens (JWT)."
-  (fn [request]
-    (if (login-uri? config request)
-      (authenticate config request)
-      (verify-token config request))))
+  (if (login-uri? config request)
+    (authenticate config request)
+    (verify-token config request)))

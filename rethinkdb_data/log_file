@@ -1,0 +1,44 @@
+2016-06-04T16:22:55.948763724 1.309832s notice: Recursively removing directory /data/rethinkdb_data/tmp
+2016-06-04T16:22:56.144641492 1.505710s notice: Initializing directory /data/rethinkdb_data
+2016-06-04T16:22:56.144725801 1.505793s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/data/rethinkdb_data' did not already exist or is empty.)
+2016-06-04T16:22:56.144744019 1.505811s notice: Running rethinkdb 2.3.3~0jessie (GCC 4.9.2)...
+2016-06-04T16:22:56.208397043 1.569467s notice: Running on Linux 4.5.1-1-ARCH x86_64
+2016-06-04T16:22:56.208444841 1.569512s notice: Loading data from directory /data/rethinkdb_data
+2016-06-04T16:22:57.066926658 2.427995s info: Automatically using cache size of 100 MB
+2016-06-04T16:22:57.070015866 2.431083s warn: Cache size does not leave much memory for server and query overhead (available memory: 999 MB).
+2016-06-04T16:22:57.070017430 2.431084s warn: Cache size is very low and may impact performance.
+2016-06-04T16:22:57.096561829 2.457629s notice: Listening for intracluster connections on port 29015
+2016-06-04T16:22:57.214270943 2.575338s notice: Listening for client driver connections on port 28015
+2016-06-04T16:22:57.214383207 2.575450s notice: Listening for administrative HTTP connections on port 8080
+2016-06-04T16:22:57.244121638 2.605189s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.3, ::1, fe80::42:acff:fe11:3%11
+2016-06-04T16:22:57.274908517 2.635976s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.3, ::1, fe80::42:acff:fe11:3%11
+2016-06-04T16:22:57.297764307 2.658832s notice: Listening on http addresses: 127.0.0.1, 172.17.0.3, ::1, fe80::42:acff:fe11:3%11
+2016-06-04T16:22:57.297772693 2.658840s notice: Server ready, "327db7b055c9_d1p" 000b6a3a-fdeb-4ddc-8023-2af31aa729c6
+2016-06-04T16:23:57.211830304 62.572898s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-06-04T17:33:43.754004770 4249.115073s info: Table f28e0859-09ed-42c1-b144-c99f3d32b244: Starting a new Raft election for term 1.
+2016-06-04T17:33:43.758434387 4249.119502s info: Table f28e0859-09ed-42c1-b144-c99f3d32b244: Added replica on this server.
+2016-06-04T17:33:43.868359229 4249.229426s info: Table f28e0859-09ed-42c1-b144-c99f3d32b244: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-05T22:02:56.151792504 54584.617942s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-06-08T18:22:30.666731471 0.343974s notice: Running rethinkdb 2.3.3~0jessie (GCC 4.9.2)...
+2016-06-08T18:22:30.728701462 0.405943s notice: Running on Linux 4.5.1-1-ARCH x86_64
+2016-06-08T18:22:30.728771495 0.406011s notice: Loading data from directory /data/rethinkdb_data
+2016-06-08T18:22:30.948707986 0.625949s info: Automatically using cache size of 1608 MB
+2016-06-08T18:22:30.981576237 0.658816s notice: Listening for intracluster connections on port 29015
+2016-06-08T18:22:31.098960757 0.776201s notice: Listening for client driver connections on port 28015
+2016-06-08T18:22:31.099130997 0.776371s notice: Listening for administrative HTTP connections on port 8080
+2016-06-08T18:22:31.127967998 0.805208s notice: Listening on cluster addresses: 127.0.0.1, 172.17.0.2, ::1, fe80::42:acff:fe11:2%9
+2016-06-08T18:22:31.154409725 0.831650s notice: Listening on driver addresses: 127.0.0.1, 172.17.0.2, ::1, fe80::42:acff:fe11:2%9
+2016-06-08T18:22:31.184421236 0.861661s notice: Listening on http addresses: 127.0.0.1, 172.17.0.2, ::1, fe80::42:acff:fe11:2%9
+2016-06-08T18:22:31.184429960 0.861670s notice: Server ready, "327db7b055c9_d1p" 000b6a3a-fdeb-4ddc-8023-2af31aa729c6
+2016-06-08T18:22:32.806959339 2.484200s info: Table f28e0859-09ed-42c1-b144-c99f3d32b244: Starting a new Raft election for term 2.
+2016-06-08T18:22:32.873933506 2.551174s info: Table f28e0859-09ed-42c1-b144-c99f3d32b244: This server is Raft leader for term 2. Latest log index is 3.
+2016-06-08T18:33:44.060659509 673.737899s info: Table a48681af-c5c2-417a-bf6c-397ed5105dcb: Starting a new Raft election for term 1.
+2016-06-08T18:33:44.060880706 673.738121s info: Table a48681af-c5c2-417a-bf6c-397ed5105dcb: Added replica on this server.
+2016-06-08T18:33:44.152912482 673.830152s info: Table a48681af-c5c2-417a-bf6c-397ed5105dcb: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-08T18:40:49.650641619 1099.327882s notice: Removing file /data/rethinkdb_data/a48681af-c5c2-417a-bf6c-397ed5105dcb
+2016-06-08T18:40:49.650648665 1099.327888s info: Table a48681af-c5c2-417a-bf6c-397ed5105dcb: Deleted the table.
+2016-06-08T18:41:16.802528826 1126.479769s info: Table 980ecabf-8910-4914-b731-e0af55cffba4: Starting a new Raft election for term 1.
+2016-06-08T18:41:16.802678979 1126.479919s info: Table 980ecabf-8910-4914-b731-e0af55cffba4: Added replica on this server.
+2016-06-08T18:41:16.861186842 1126.538427s info: Table 980ecabf-8910-4914-b731-e0af55cffba4: This server is Raft leader for term 1. Latest log index is 0.
+2016-06-08T20:53:31.110758401 9060.787998s warn: Some RethinkDB data on this server has been placed into swap memory. This may impact performance.
+2016-06-08T21:47:10.848768853 11493.113714s info: Table 980ecabf-8910-4914-b731-e0af55cffba4: Configuration is changing.

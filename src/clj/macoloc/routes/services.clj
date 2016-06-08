@@ -8,26 +8,7 @@
             [cemerick.friend.credentials :as creds]
             [cemerick.friend.util :refer [gets]]
             [clj-jwt.key :refer [public-key private-key]]
-            [clj-time.core :refer [minutes]]
             [clj-jwt.intdate :refer [intdate->joda-time]]))
-
-(def users {"friend" {:username "friend"
-                      :password (creds/hash-bcrypt "clojure")
-                      :roles #{::user}}
-            "greg" {:username "greg"
-                    :password (creds/hash-bcrypt "kaktus")
-                    :roles #{::admin}}})
-
-(derive ::admin ::user) ; admins are considered to be also users
-
-(def jwt-service-config
-  {:algorithm :HS256
-   :private-key "secret" ; FIXME never put a plain text secret in the source code!
-   :token-time-to-live (minutes 2)})
-
-(def jwt-client-config
-  {:algorithm :HS256
-   :public-key "secret"}) ; FIXME never put a plain text secret in the source code!
 
 (s/defschema Bounds {:ne {:lat Double :lng Double}
                      :sw {:lat Double :lng Double}})
@@ -65,13 +46,13 @@
             (GET "/hello-user" []
                  :return       s/Str
                  :summary      "Get users by id"
-                 (-> (friend/authorize #{::user} (ok "Hello authorized user"))
+                 (-> (friend/authorize #{:macoloc.auth/user} (ok "Hello authorized user"))
                      (content-type "application/json")))
 
             (GET "/hello-admin" []
                  :return       s/Str
                  :summary      "Get users by id"
-                 (-> (friend/authorize #{::admin} (ok "Hello authorized admin"))
+                 (-> (friend/authorize #{:macoloc.auth/admin} (ok "Hello authorized admin"))
                      (content-type "application/json")))
 
             (GET "/name" []
@@ -87,9 +68,4 @@
                    {:allow-anon? true
                     :unauthenticated-handler friend-jwt/workflow-deny
                     :login-uri "/authenticate"
-                    :workflows [(friend-jwt/workflow
-                                  :token-header "X-Auth-Token"
-                                  :service-config jwt-service-config
-                                  :client-config jwt-client-config
-                                  :credential-fn (partial creds/bcrypt-credential-fn users)
-                                  :get-user-fn users)]}))
+                    :workflows [friend-jwt/workflow]}))

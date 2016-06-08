@@ -38,7 +38,8 @@
                  [luminus-immutant "0.2.0"]
                  [clj-jwt "0.1.1"]
                  [cheshire "5.6.1"]
-                 [com.cemerick/friend "0.2.2-SNAPSHOT"]]
+                 [com.cemerick/friend "0.2.2-SNAPSHOT"]
+                 [com.apa512/rethinkdb "0.15.23"]]
 
   :min-lein-version "2.0.0"
 
@@ -110,6 +111,7 @@
                                  [org.seleniumhq.selenium/selenium-server "2.48.2" :exclusions [org.bouncycastle/bcprov-jdk15on]]
                                  [lein-figwheel "0.5.3-1"]
                                  [lein-doo "0.1.6"]
+                                 [binaryage/devtools "0.6.1"]
                                  [com.cemerick/piggieback "0.2.2-SNAPSHOT"]]
                   :plugins      [[com.jakemccrary/lein-test-refresh "0.14.0"]
                                  [lein-figwheel "0.5.3-1"]
